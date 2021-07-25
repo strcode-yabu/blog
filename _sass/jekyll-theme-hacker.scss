@@ -72,6 +72,7 @@ body {
   margin: 0 0 calc(8px * 2);
   &__link {
     color: var(--color-brand);
+    word-wrap: break-word;
     text-decoration: none;
     transition: .3s;
     &:hover {
