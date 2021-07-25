@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<ul id="posts">
+  {% for post in site.posts %}
+    <li class="post__item">
+      <a class="post__link" href="{{ site.repository }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{{content}}
