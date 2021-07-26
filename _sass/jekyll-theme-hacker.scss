@@ -108,19 +108,23 @@ body {
       }
     }
   }
-  // #post {
-  //   .post {
-  //     &__date {
-
-  //     }
-  //     &__main_title {
-
-  //     }
-  //     &__author {
-
-  //     }
-  //   }
-  // }
+  #post {
+    .post {
+      &__date {
+        font-size: .75em;
+        border-bottom: 1px dotted var(--color-border);
+        margin-bottom: 8px;
+        padding-bottom: .25em;
+      }
+      &__main_title {
+        margin-bottom: 8px;
+      }
+      &__author {
+        font-size: .75em;
+        margin: 0 0 calc(8px * 4);
+      }
+    }
+  }
 }
 
 #main_contents {
