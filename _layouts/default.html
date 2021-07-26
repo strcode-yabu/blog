@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <header id="header">
-      <div class="wrap">
-        <h1 class="site_title">
-          <a class="site_title__link" href="{{ '/' | relative_url }}">
-            {{ site.title }}
-          </a>
-        </h1>
-        <p class="site_title__description">
-          {{ site.description }}
-        </p>
-      </div>
-    </header>
+    {% include header.html %}
     <main id="main">
       <div class="wrap">
         <section id="main_contents">
@@ -26,21 +15,7 @@
         </section>
       </div>
     </main>
-    <footer id="footer">
-      <div class="wrap">
-        <small class="copyright">
-          (C) {% if site.since %}{{ site.since }} - {% endif %}{{ site.author }}.
-        </small>
-      </div>
-    </footer>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QFR6LXEZM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{ site.google_analytics }}');
-    </script>
+    {% include footer.html %}
+    {% include google_analytics.html %}
   </body>
 </html>
