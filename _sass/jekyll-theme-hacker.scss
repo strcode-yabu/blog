@@ -96,14 +96,31 @@ body {
 
 #main_contents {
   #posts {
+    list-style-type: none;
+    padding-left: 0;
     .post {
-      // &__item {
-
-      // }
+      &__item {
+        border-bottom: 1px dotted var(--color-border);
+        padding: 8px 0;
+        &:first-of-type {
+          border-top: 1px dotted var(--color-border);
+        }
+      }
       &__link {
+        display: inline-block;
         text-decoration: none;
+        transition: .3s;
         &:hover {
-          text-decoration: underline;
+          opacity: .8;
+        }
+        &__date {
+          font-size: .75em;
+          border-bottom: 1px dotted var(--color-border);
+          margin-bottom: 8px;
+          padding-bottom: .25em;
+        }
+        &__title {
+          margin-bottom: 8px;
         }
       }
     }

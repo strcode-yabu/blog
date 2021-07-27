@@ -3,4 +3,5 @@ description: S.Yabunaka [strCode] blog.
 author: S.Yabunaka [strCode]
 repository: /blog
 since: 2021
+excerpt_separator: <!--more-->
 theme: jekyll-theme-hacker
