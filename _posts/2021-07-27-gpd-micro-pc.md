@@ -3,11 +3,7 @@ layout: post
 title: GPD micro PC
 ---
 
-<<<<<<< HEAD
 ![]({{ site.repository }}/assets/images/2021/07/27_gpd-micro-pc/image001.jpg)
-=======
-![](/assets/images/2021/07/27_gpd-micro-pc/image001.jpg)
->>>>>>> 56b6ebbe2c369f0219023ec3695f1d47b955fb68
 
 ちょっと前から、外での打ち合わせやメモ、小作業用として、**中国・深センGPD Technology**の**GPD micro PC**を使っている。  
 標準のインストールOSはWindows10だが、筆者は変わり者なので**Manjaro Linuxのi3エディション**をインストールして使っている。  
