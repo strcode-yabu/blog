@@ -6,8 +6,8 @@ layout: default
   {% for post in site.posts %}
     <li class="post__item">
       <a class="post__link" href="{{ site.repository }}{{ post.url }}">
-        <time class="post__link__date" datetime="{{ page.date | date: '%Y-%-m-%-d' }}">
-          {{ page.date | date: "%Y.%-m.%-d" }}
+        <time class="post__link__date" datetime="{{ post.date | date: '%Y-%-m-%-d' }}">
+          {{ post.date | date: "%Y.%-m.%-d" }}
         </time>
         <h2 class="post__link__title">{{ post.title }}</h2>
         <p class="post__link__excerpt">
