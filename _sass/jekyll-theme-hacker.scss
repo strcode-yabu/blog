@@ -50,6 +50,10 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrap {
   width: calc(100% - calc(8px * 2) * 2);
   margin: 0 auto;
