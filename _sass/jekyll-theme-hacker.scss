@@ -111,9 +111,14 @@ img {
         }
       }
       &__link {
-        display: inline-block;
+        display: block;
+        color: var(--color-main);
         text-decoration: none;
         transition: .3s;
+        img {
+          width: 320px;
+          max-width: 100%;
+        }
         &:hover {
           opacity: .8;
         }
