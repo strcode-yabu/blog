@@ -86,7 +86,7 @@ $ xrandr -o right
 ## インストール後の設定(最低限)
 
 まずは起動ごとに画面が回転するのをなんとかしたい。  
-下記のファイルを作成して再起動する。  
+`/etc/X11/xorg.conf.d/20-display.conf`のファイルを作成して再起動する。  
 
 ```/etc/X11/xorg.conf.d/20-display.conf
 Section "Monitor"
@@ -125,9 +125,9 @@ $ sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts-extra otf-ipafont ot
 $ sudo pacman -S fcitx5-im fcitx5-mozc
 ```
 
-`.xprofile`の作成もやっておく。  
+`~/.xprofile`の作成もやっておく。  
 
-```:~/.xprofile
+```~/.xprofile
 export LANG="ja_JP.UTF-8"
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
