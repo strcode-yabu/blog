@@ -113,11 +113,12 @@ img {
         display: block;
         color: var(--color-main);
         text-decoration: none;
-        padding: 8px 0;
+        padding: 8px;
         transition: .3s;
         img {
           width: 320px;
           max-width: 100%;
+          border-radius: 4px;
         }
         &:hover {
           background: var(--color-brand);
@@ -129,9 +130,9 @@ img {
           margin-bottom: 8px;
           padding-bottom: .25em;
         }
-        &__title {
-          margin-bottom: 8px;
-        }
+        // &__title {
+        //   margin-bottom: 8px;
+        // }
       }
     }
   }
