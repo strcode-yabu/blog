@@ -165,6 +165,8 @@ img {
   }
   h2 {
     font-size: 2em;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: .5em;
   }
   h3 {
     font-size: 1.8em;
