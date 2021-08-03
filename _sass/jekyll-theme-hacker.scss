@@ -120,6 +120,7 @@ img {
           max-width: 100%;
         }
         &:hover {
+          background: var(--color-brand);
           opacity: .8;
         }
         &__date {
