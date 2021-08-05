@@ -156,6 +156,8 @@ img {
 }
 
 #ofuse {
+  border-top: 3px double var(--color-border);
+  margin-top: calc(8px * 4);
   display: flex;
   justify-content: space-around;
   align-items: center;
