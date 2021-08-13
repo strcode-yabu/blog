@@ -1,6 +1,11 @@
 ---
 layout: post
 title: GPD micro PC
+tags:
+- umpc
+- linux
+- manjaro
+- memorandum
 ---
 
 ![]({{ site.repository }}/assets/images/2021/07/27_gpd-micro-pc/image001.jpg)
