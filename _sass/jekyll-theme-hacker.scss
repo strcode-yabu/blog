@@ -146,6 +146,7 @@ img {
       margin: 0 0 calc(8px * 4);
     }
     &__footer {
+      text-align: right;
       border-top: 1px dotted var(--color-border);
       margin: 0 0 calc(8px * 4);
       padding: 8px 0;
@@ -157,11 +158,12 @@ img {
         margin-bottom: 8px;
         padding-bottom: .25em;
       }
-      // &__main_title {
-      //   margin-bottom: 8px;
-      // }
+      &__main_title {
+        margin-bottom: 0;
+      }
       &__author {
         font-size: .75em;
+        font-style: normal;
       }
     }
   }
@@ -221,6 +223,9 @@ img {
     padding: .75em;
     overflow: auto;
     overflow-y: hidden;
+  }
+  code {
+    font-family: var(--font-code);
   }
   code.highlighter-rouge {
     background: var(--color-bg-a);
