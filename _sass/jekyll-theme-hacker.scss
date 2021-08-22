@@ -236,6 +236,7 @@ img {
   a {
     color: var(--color-brand-light);
     text-decoration: none;
+    word-break: break-all;
     transition: .3s;
     &:hover {
       text-decoration: underline;
