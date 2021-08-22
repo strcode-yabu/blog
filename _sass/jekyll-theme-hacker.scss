@@ -137,6 +137,19 @@ img {
     }
   }
   #post {
+    &__header {
+      margin: 0 0 calc(8px * 4);
+      border-bottom: 1px dotted --color-border;
+      padding: 8px 0;
+    }
+    &__main{
+      margin: 0 0 calc(8px * 4);
+    }
+    &__footer {
+      border-top: 1px dotted --color-border;
+      margin: 0 0 calc(8px * 4);
+      padding: 8px 0;
+    }
     .post {
       &__date {
         font-size: .75em;
@@ -144,12 +157,11 @@ img {
         margin-bottom: 8px;
         padding-bottom: .25em;
       }
-      &__main_title {
-        margin-bottom: 8px;
-      }
+      // &__main_title {
+      //   margin-bottom: 8px;
+      // }
       &__author {
         font-size: .75em;
-        margin: 0 0 calc(8px * 4);
       }
     }
   }
