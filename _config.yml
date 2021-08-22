@@ -4,5 +4,6 @@ author: S.Yabunaka [strCode]
 url: https://strcode-yabu.github.io/blog
 repository: /blog
 since: 2021
+google_analytics: G-2QFR6LXEZM
 excerpt_separator: <!--more-->
 theme: jekyll-theme-hacker
