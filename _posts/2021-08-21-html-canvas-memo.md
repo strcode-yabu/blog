@@ -20,7 +20,7 @@ HTML上に`<canvas id="canvas_area"></canvas>`というcanvasのエリアがあ�
 画像のデータは`0-9`の数字と`a-z`のアルファベットを用いた文字列で表記する。  
 例えば3x3の正方形の中央にドットを打つ場合は、  
 
-```JavaScript
+```javascript
 const data =
   '000' +
   '010' + 
@@ -32,7 +32,7 @@ const data =
 一文字一文字を色に対応させるためにパレットの連想配列を用意する。  
 今回は対応する文字に対して、RGBの値を格納した配列を持たせている。  
 
-```JavaScript
+```javascript
 const colorData = {
   '0': [0, 0, 0],
   '1': [255, 255, 255]
@@ -45,7 +45,7 @@ const colorData = {
 
 今回は下記のプログラムにデータを渡し、描画を行う。
 
-```JavaScript
+```javascript
 'use strict';
 
 const data =
@@ -82,7 +82,7 @@ context.putImageData(imageData, 20, 20);
 
 ## 詳解
 
-```JavaScript
+```javascript
 const context = canvas.getContext('2d');
 ```
 
@@ -93,7 +93,7 @@ const context = canvas.getContext('2d');
   - [https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D](https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D)
 
 
-```JavaScript
+```javascript
 const imageData = context.createImageData(10, 5);
 ```
 
@@ -104,12 +104,13 @@ const imageData = context.createImageData(10, 5);
   - [https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas](https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)
 
 
-```JavaScript
+```javascript
 imageData.data[index * 4 + 0] = colorData[color][0];
 imageData.data[index * 4 + 1] = colorData[color][1];
 imageData.data[index * 4 + 2] = colorData[color][2];
 imageData.data[index * 4 + 3] = 255;
 ```
+
 `ImageData`の各ピクセルのRGBAの値を`0-255`で設定する。  
 並びとしては4つの配列の連なりでR(赤),G(緑),B(青),A(不透明度)となっている。  
 なので10x5の画像の場合は10x5x4で200の配列で情報を管理していることになる。  
