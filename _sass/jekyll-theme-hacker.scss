@@ -139,14 +139,14 @@ img {
   #post {
     &__header {
       margin: 0 0 calc(8px * 4);
-      border-bottom: 1px dotted --color-border;
+      border-bottom: 1px dotted var(--color-border);
       padding: 8px 0;
     }
     &__main{
       margin: 0 0 calc(8px * 4);
     }
     &__footer {
-      border-top: 1px dotted --color-border;
+      border-top: 1px dotted var(--color-border);
       margin: 0 0 calc(8px * 4);
       padding: 8px 0;
     }
