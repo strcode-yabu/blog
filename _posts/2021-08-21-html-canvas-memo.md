@@ -89,8 +89,7 @@ const context = canvas.getContext('2d');
 取得したキャンバスエリア`canvas`から`CanvasRenderingContext2D`オブジェクトを取得する。  
 キャンバスエリアに2D描画をするためのメソッドやプロパティなどを持つ。  
 
-- CanvasRenderingContext2D - MDN
-  - [https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D](https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D)
+- [CanvasRenderingContext2D - MDN](https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D)
 
 
 ```javascript
@@ -100,8 +99,7 @@ const imageData = context.createImageData(10, 5);
 2D画像を描画するための`ImageData`オブジェクトを作成。  
 引数には幅と高さを渡す。  
 
-- Canvas とピクセル操作 - MDN
-  - [https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas](https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)
+- [Canvas とピクセル操作 - MDN](https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)
 
 
 ```javascript
@@ -118,11 +116,9 @@ imageData.data[index * 4 + 3] = 255;
 今回は`画像情報のindex値 * 4(色数) + n`で配列の添字を算出している。  
 
 
-- ImageData.data - MDN(en-US)
-  - [https://developer.mozilla.org/en-US/docs/Web/API/ImageData/data](https://developer.mozilla.org/en-US/docs/Web/API/ImageData/data)
+- [ImageData.data - MDN(en-US)](https://developer.mozilla.org/en-US/docs/Web/API/ImageData/data)
 
 
 ## 参考
 
-- ### HTML5のCanvasにドット絵を描く
-  - [https://qiita.com/Yamazin/items/cdca50471af475e6300a](https://qiita.com/Yamazin/items/cdca50471af475e6300a)
+- [HTML5のCanvasにドット絵を描く](https://qiita.com/Yamazin/items/cdca50471af475e6300a)

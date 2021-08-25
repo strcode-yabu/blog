@@ -23,7 +23,7 @@ Githubのリポジトリに静的サイトを公開できるホスティング�
 
 Ruby実装の静的サイトジェネレータ。  
 Markdown文書でページや記事の記述ができるのが特徴。  
-詳しくはJekyllの[公式サイト](https://jekyllrb.com/)をチェック。  
+詳しくは[Jekyllの公式サイト](https://jekyllrb.com/)をチェック。  
 
 今回Github Pagesでブログを開設するにあたり、このJekyllを活用する。  
 なお、Github PagesのJekyllは少々制約もあるので注意。  

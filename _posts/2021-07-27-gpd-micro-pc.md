@@ -71,7 +71,7 @@ KING JIMが発売していたポメラという端末がある。
 
 ## Manjaro Linuxのインストール
 
-Manjaro Linux公式[https://manjaro.org/](https://manjaro.org/)よりインストールメディアデータをダウンロードしてくる。  
+[Manjaro Linux公式](https://manjaro.org/)よりインストールメディアデータをダウンロードしてくる。  
 私は*i3 エディション*を使っているが、お好みで別のウィンドウマネージャでも良い。  
 
 USBを差し込んだら電源ボタンを投入、`esc`を押してブートメニューを呼び出し、USBから起動してインストールに進む。  
