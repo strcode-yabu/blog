@@ -79,14 +79,14 @@ theme: jekyll-theme-hacker
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blogs</title>
-    <link rel="stylesheet" href="\{\{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url \}\}">
+    <link rel="stylesheet" href="{% raw %}{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}{% endraw %}">
   </head>
   <body>
     <header>
-      <h1>\{\{ page.title \}\}</h1>
+      <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
     </header>
     <main>
-      \{\{ content \}\}
+      {% raw %}{{ content }}{% endraw %}
     </main>
   </body>
 </html>
@@ -124,13 +124,13 @@ title: blogs
 
 ```html
 <ul>
-  \{\% for post in site.posts \%\}
+  {% raw %}{% for post in site.posts %}{% endraw %}
     <li>
-      <a href="\{\{ post.url \}\}">
-        <h2>\{\{ post.title \}\}</h2>
+      <a href="{% raw %}{{ post.url }}{% endraw %}">
+        <h2>{% raw %}{{ post.title }}{% endraw %}</h2>
       </a>
     </li>
-  \{\% endfor \%\}
+  {% raw %}{% endfor %}{% endraw %}
 </ul>
 ```
 
