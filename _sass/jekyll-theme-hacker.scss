@@ -104,7 +104,7 @@ img {
     padding-left: 0;
     .post {
       &__item {
-        border-bottom: 1px dotted var(--color-border);
+        border-bottom: 1px solid var(--color-border);
         &:first-of-type {
           border-top: 3px double var(--color-border);
         }
@@ -173,7 +173,7 @@ img {
 }
 
 #ofuse {
-  border-top: 3px double var(--color-border);
+  border-top: 1px dashed var(--color-border);
   margin-top: calc(8px * 4);
   display: flex;
   justify-content: space-around;
