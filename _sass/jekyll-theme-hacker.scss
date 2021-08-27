@@ -106,7 +106,10 @@ img {
       &__item {
         border-bottom: 1px dotted var(--color-border);
         &:first-of-type {
-          border-top: 1px dotted var(--color-border);
+          border-top: 3px double var(--color-border);
+        }
+        &:last-of-type {
+          border-bottom: 3px double var(--color-border);
         }
       }
       &__link {
@@ -130,9 +133,9 @@ img {
           margin-bottom: 8px;
           padding-bottom: .25em;
         }
-        // &__title {
-        //   margin-bottom: 8px;
-        // }
+        &__title {
+          border-bottom: 1px dotted var(--color-border);
+        }
       }
     }
   }
