@@ -87,16 +87,29 @@ $ xrandr -o right
 ## インストール後の設定(最低限)
 
 まずは起動ごとに画面が回転するのをなんとかしたい。  
-`/etc/X11/xorg.conf.d/20-display.conf`のファイルを作成して再起動する。  
+`/etc/X11/xorg.conf.d/20-display.conf`のファイルを作成し内蔵ディスプレイの90度回転を設定する。  
 
 ```/etc/X11/xorg.conf.d/20-display.conf
 Section "Monitor"
-  Identifier  "DSI-1"
+  Identifier  "DSI1"
   Option      "Rotate"  "right"
 EndSection
 ```
 
-- *2022.1.14修正: 内蔵ディスプレイの設定をIntelドライバからMesaドライバに変更*
+またIntelグラフィックのドライバを使うため、`/etc/X11/xorg.conf.d/10-intel.conf`も一緒に作成しておく。  
+※2021年8月頃のxorg-serverのアップデートで手動で設定する必要が出てきた。  
+
+```/etc/X11/xorg.conf.d/10-intel.conf
+Section "Device"
+  Identifier    "Intel Graphics"
+  Driver        "intel"
+  Option        "AccelMethod"    "sna"
+  Option        "TearFree"       "true"
+  Option        "DRI"            "3"
+EndSection
+```
+
+上記2ファイルが作成できたら再起動を行う。  
 
 また、pacman(パッケージ管理システム)のサーバも最適化させておこう。  
 下記のコマンドを使えば自動で応答が速いサーバをセットアップしてくれる。  
