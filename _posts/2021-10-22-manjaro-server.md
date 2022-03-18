@@ -24,7 +24,7 @@ sudo pacman -S apache
 
 インストールが終わったら`/etc/httpd/conf/httpd.conf`をエディタで開き編集する。  
 
-```
+```/etc/httpd/conf/httpd.conf
 # 下記の行を見つけてコメントアウト
 # LoadModule unique_id_module modules/mod_unique_id.so
 ```
@@ -47,7 +47,6 @@ Webサーバが動作しているか確認する場合は下記のコマンド�
 sudo systemctl status httpd
 ```
 
-
 ## PHPのインストール
 
 Apacheのインストールが終わったら、次は[PHP](https://www.php.net/)をインストールする。  
@@ -58,7 +57,7 @@ sudo pacman -S php php-apache
 
 インストールが終わったら`/etc/httpd/conf/httpd.conf`をエディタで開き編集する。  
 
-```
+```/etc/httpd/conf/httpd.conf
 # 下記の行を見つけてコメントアウト
 # LoadModule mpm_event_module modules/mod_mpm_event.so
 
@@ -90,12 +89,13 @@ sudo pacman -S vsftpd
 
 インストールが終わったら`/etc/vsftpd.conf`をエディターで開き編集する。  
 
-```
+```/etc/vsftpd.conf
 anonymous_enable=NO
 local_enable=YES
 write_enable=YES
 local_umask=022
 ```
+
 設定が完了したらFTP用の一意のユーザを作成する。  
 
 ```bash
@@ -105,7 +105,7 @@ sudo passwd ftpUserName
 
 FTPユーザを作成したら`/etc/vsftpd.conf`をエディターで開き編集する。  
 
-```
+```/etc/vsftpd.conf
 nopriv_user=ftpUserNamme
 ```
 
@@ -121,7 +121,7 @@ sudo systemctl restart vsftpd
 
 `/etc/pam.d/vsftpd`をエディターで開き変更する。  
 
-```
+```/etc/pam.d/vsftpd
 # auth requiredpam_shells.so
 # 上記の行を下記に変更する。
 auth requiredpam_nologin.so
@@ -141,7 +141,6 @@ sudo systemctl restart vsftpd
 sudo chmod 777 /srv/http/
 sudo chown -R root.root /srv/http/
 ```
-
 
 ## 今後の追記予定
 

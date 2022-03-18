@@ -38,8 +38,8 @@ const colorData = {
   '1': [255, 255, 255]
 };
 ```
-この場合は3x3の黒の四角形の中心に白の点が描画されることになる。  
 
+この場合は3x3の黒の四角形の中心に白の点が描画されることになる。  
 
 ## 描画プログラムについて
 
@@ -91,7 +91,6 @@ const context = canvas.getContext('2d');
 
 - [CanvasRenderingContext2D - MDN](https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D)
 
-
 ```javascript
 const imageData = context.createImageData(10, 5);
 ```
@@ -100,7 +99,6 @@ const imageData = context.createImageData(10, 5);
 引数には幅と高さを渡す。  
 
 - [Canvas とピクセル操作 - MDN](https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas)
-
 
 ```javascript
 imageData.data[index * 4 + 0] = colorData[color][0];
@@ -115,9 +113,7 @@ imageData.data[index * 4 + 3] = 255;
 
 今回は`画像情報のindex値 * 4(色数) + n`で配列の添字を算出している。  
 
-
 - [ImageData.data - MDN(en-US)](https://developer.mozilla.org/en-US/docs/Web/API/ImageData/data)
-
 
 ## 参考
 
