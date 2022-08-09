@@ -31,11 +31,11 @@ Google ドキュメントやスプレッドシートのマクロのような側�
 
 ### 新規のプロジェクトを作成する
 
-![""]({{ site.repository }}/assets/images/2022/08/10_gas-mail-send/image001.png)
+![""]({{ site.repository }}/assets/images/2022/08/09_gas-mail-send/image001.png)
 
 Google ドライブにアクセスし、新規作成を行う。
 
-![""]({{ site.repository }}/assets/images/2022/08/10_gas-mail-send/image002.png)
+![""]({{ site.repository }}/assets/images/2022/08/09_gas-mail-send/image002.png)
 
 作成するファイルには **Google Apps Script**を選択する。
 
@@ -104,11 +104,11 @@ const doPost = (e) => {
 
 ### 処理が完成したら Web アプリとして公開する
 
-![""]({{ site.repository }}/assets/images/2022/08/10_gas-mail-send/image003.png)
+![""]({{ site.repository }}/assets/images/2022/08/09_gas-mail-send/image003.png)
 
 右上の **デプロイ** ボタンをクリック、 **新しいデプロイ** を実施する。
 
-![""]({{ site.repository }}/assets/images/2022/08/10_gas-mail-send/image004.png)
+![""]({{ site.repository }}/assets/images/2022/08/09_gas-mail-send/image004.png)
 
 新しいデプロイ画面が出てきたら **種類の選択** のハグルママークをクリップしてウェブアプリを選択する。  
 特に設定をいじる必要はないが、わかりやすいように説明の部分は入れておくと管理しやすくできる。
@@ -129,7 +129,7 @@ const doPost = (e) => {
 ざっくりと見てみたがかなり簡単にフォームのバックエンド処理が実装できた。  
 PHP などサーバ側はまだわからないけど、実際に使えるフォームが作りたい場合はひとつの選択として GAS を選んでみるのも良いだろう。
 
-## 参考サイト)
+## 参考サイト
 
 - [GAS で web アプリの作成とパラメータの確認方法(doGet、doPost)](https://breezegroup.co.jp/201906/gas-get/)
 - [GAS で GET,POST を受け取る方法](https://kin29.info/gas%E3%81%A7getpost%E3%82%92%E5%8F%97%E3%81%91%E5%8F%96%E3%82%8B%E6%96%B9%E6%B3%95/)
