@@ -16,6 +16,8 @@ HTML・CSS を用いてみてくれまでは作れるかもしれないが、そ
 Google が提供している **Google Apps Script** を活用することにより PHP などが使えるサーバを用意することなく、送信処理を実装することが可能となる。  
 早速見てみよう。
 
+<!--more-->
+
 ## Google Apps Script とは
 
 Google が提供する JavaScript をベースとしたスクリプト言語である。  
@@ -39,8 +41,8 @@ Google ドライブにアクセスし、新規作成を行う。
 
 ### プロジェクト内に`doPost`関数を作成する
 
-```gas
-const doPost = e => {
+```javascript
+const doPost = (e) => {
   Logger.log(e);
 };
 ```
@@ -49,8 +51,8 @@ const doPost = e => {
 `e.parameter`にフォームのデータが含まれているので、そちらからデータを取得する。  
 例えば`name(送信者名前)`, `email(送信者メールアドレス)`, `content(送信内容)`を受け取った場合のコードはこのようになる。
 
-```gas
-const doPost = e => {
+```javascript
+const doPost = (e) => {
   Logger.log(e);
   const name = e.parameter.name;
   const email = e.parameter.email;
@@ -65,21 +67,18 @@ const doPost = e => {
 POST データを受信できたので、次は Gmail を使ってメールを送信する処理を書く。  
 メールの送信には`GmailApp.sendEmail()`を使用する。
 
-```gas
+```javascript
 const sendMail = (name, email, content) => {
   const recipient = email;
   const recipientName = name;
-  const subject = 'Test Mail Title';
+  const subject = "Test Mail Title";
 
-  const body = recipientName + '様より\n'
-  + '\n'
-  + 'テストメールです。\n'
-  + '\n'
-  + content;
+  const body =
+    recipientName + "様より\n" + "\n" + "テストメールです。\n" + "\n" + content;
 
   const options = {
-     from: 'test@example.com' ,
-     name: 'テスト太郎'
+    from: "test@example.com",
+    name: "テスト太郎",
   };
 
   GmailApp.sendEmail(recipient, subject, body, options);
@@ -92,8 +91,8 @@ const sendMail = (name, email, content) => {
 
 送信用の関数ができたらそちらに値を渡せるように`doPost`関数を修正する。
 
-```gas
-const doPost = e => {
+```javascript
+const doPost = (e) => {
   Logger.log(e);
   const name = e.parameter.name;
   const email = e.parameter.email;
