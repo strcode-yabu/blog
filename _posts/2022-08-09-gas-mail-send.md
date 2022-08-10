@@ -21,11 +21,11 @@ Google が提供している **Google Apps Script** を活用することによ�
 ## Google Apps Script とは
 
 Google が提供する JavaScript をベースとしたスクリプト言語である。  
-Google ドキュメントやスプレッドシートのマクロのような側面で使われていたが、Gmail やカレンダーを操作することもできるので様々なことが実行できる。
-利用には Google のアカウントが必要になる。
+Google ドキュメントやスプレッドシートのマクロのような側面で使われていたが、Gmail やカレンダーを操作することもできるので様々なことが実行できる。  
+利用には Google のアカウントが必要になる。  
 ※本記事では Google のアカウント作成については割愛する。
 
-詳しくは[こちら](https://developers.google.com/apps-script/)。
+Google Apps Script について、詳しくは[こちら](https://developers.google.com/apps-script/)。
 
 ## 実装の流れについて
 
