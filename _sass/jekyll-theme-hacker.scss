@@ -63,7 +63,7 @@ img {
   }
 }
 
-#header {
+.header {
   width: 100%;
   border-bottom: 1px dotted var(--color-border);
   margin: 0 0 calc(8px * 10);
@@ -89,17 +89,31 @@ img {
   }
 }
 
-#main {
+.main {
   width: 100%;
   margin: 0 0 calc(8px * 10);
   .wrap {
     background: var(--color-bg-content);
     padding: calc(8px * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    @include pc() {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0;
+    }
   }
 }
 
-#main_contents {
-  #posts {
+.main_contents {
+  @include pc() {
+    width: 84%;
+  }
+  .posts {
     list-style-type: none;
     padding-left: 0;
     .post {
@@ -139,7 +153,7 @@ img {
       }
     }
   }
-  #post {
+  .post {
     &__header {
       margin: 0 0 calc(8px * 4);
       border-bottom: 1px dotted var(--color-border);
@@ -154,39 +168,20 @@ img {
       margin: 0 0 calc(8px * 4);
       padding: 8px 0;
     }
-    .post {
-      &__date {
-        font-size: .75em;
-        border-bottom: 1px dotted var(--color-border);
-        margin-bottom: 8px;
-        padding-bottom: .25em;
-      }
-      &__main_title {
-        margin-bottom: 0;
-      }
-      &__author {
-        font-size: .75em;
-        font-style: normal;
-      }
+    &__date {
+      font-size: .75em;
+      border-bottom: 1px dotted var(--color-border);
+      margin-bottom: 8px;
+      padding-bottom: .25em;
+    }
+    &__main_title {
+      margin-bottom: 0;
+    }
+    &__author {
+      font-size: .75em;
+      font-style: normal;
     }
   }
-}
-
-#ofuse {
-  border-top: 1px dashed var(--color-border);
-  margin-top: calc(8px * 4);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  // .ofuse {
-  //   &__paragraph {
-
-  //   }
-  // }
-}
-
-#main_contents {
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-title);
     font-weight: bold;
@@ -264,7 +259,44 @@ img {
   }
 }
 
-#footer {
+.side_contents {
+  @include pc() {
+    width: 16%;
+  }
+  .side {
+    &__section {
+
+    }
+    &__title {
+
+    }
+    &__nav {
+
+    }
+    &__items {
+
+    }
+    &__item {
+
+    }
+  }
+}
+
+.ofuse {
+  border-top: 1px dashed var(--color-border);
+  margin-top: calc(8px * 4);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  // .ofuse {
+  //   &__paragraph {
+
+  //   }
+  // }
+}
+
+.footer {
   width: 100%;
   margin: 0;
   .wrap {

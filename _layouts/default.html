@@ -10,10 +10,13 @@
   </head>
   <body>
     {% include header.html %}
-    <main id="main">
+    <main class="main">
       <div class="wrap">
-        <section id="main_contents">
+        <section class="main_contents">
           {{ content }}
+        </section>
+        <section class="side_contents">
+          {% include category_list.html %}
         </section>
         {% include ofuse.html %}
       </div>
