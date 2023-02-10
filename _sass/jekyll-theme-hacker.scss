@@ -100,19 +100,19 @@ img {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    @include pc() {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 0;
-    }
+    // @include pc() {
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    //   justify-content: space-between;
+    //   align-items: flex-start;
+    // }
   }
 }
 
 .main_contents {
-  @include pc() {
-    width: 84%;
-  }
+  // @include pc() {
+  //   width: 84%;
+  // }
   .posts {
     list-style-type: none;
     padding-left: 0;
