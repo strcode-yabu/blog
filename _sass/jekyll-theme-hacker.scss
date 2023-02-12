@@ -207,6 +207,17 @@ img {
   h6 {
     font-size: 1.2em;
   }
+  *:not(time) + h2 {
+    margin-top: calc(8px * 10);
+  }
+  * + h3 {
+    margin-top: calc(8px * 6);
+  }
+  * + h4,
+  * + h5,
+  * + h6 {
+    margin-top: calc(8px * 4);
+  }
   blockquote {
     padding-left: .75em;
     border-left: 1px dotted var(--color-border);
